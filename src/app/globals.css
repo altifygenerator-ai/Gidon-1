@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  /* 🎨 Brand Colors (Godin Roofing Style) */
+  --background: #0b1f2a; /* deep navy */
+  --foreground: #f3f6f8; /* soft white */
+
+  --accent: #2f6f95; /* main blue */
+  --accent-light: #4f8fb5;
+
+  --muted: #132f3d; /* section/card bg */
+  --border: #1f4456;
+
+  --text-muted: #cbd5df;
+}
+
+/* 🌐 Base Reset */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  scroll-behavior: smooth;
+}
+
+/* 📦 Layout Helpers */
+.container {
+  @apply max-w-6xl mx-auto px-6;
+}
+
+/* 🧱 Sections */
+.section {
+  @apply py-20;
+}
+
+/* 🏷️ Headings */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  @apply text-4xl md:text-6xl font-semibold leading-tight;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl font-semibold;
+}
+
+h3 {
+  @apply text-xl md:text-2xl font-medium;
+}
+
+/* 📄 Paragraphs */
+p {
+  color: var(--text-muted);
+  @apply text-base md:text-lg leading-relaxed;
+}
+
+/* 🔘 Buttons */
+.btn-primary {
+  background-color: var(--accent);
+  color: white;
+  @apply px-6 py-3 font-medium rounded-md transition-all duration-200;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-light);
+}
+
+.btn-secondary {
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  @apply px-6 py-3 rounded-md transition-all duration-200;
+}
+
+.btn-secondary:hover {
+  background-color: var(--muted);
+  border-color: var(--accent);
+}
+
+/* 🧩 Cards */
+.card {
+  background-color: var(--muted);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  @apply p-6 rounded-lg transition-all duration-300;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* 🖼️ Images */
+img {
+  border-radius: 0.5rem;
+}
+
+/* ✨ Subtle animation helpers */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+}
