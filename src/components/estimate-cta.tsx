@@ -22,8 +22,8 @@ export default function EstimateCTA() {
           </motion.h2>
 
           <motion.p variants={fadeUp} className="mt-4 text-neutral-300">
-            {ctaData.text}
-          </motion.p>
+  {ctaData.subtext}
+</motion.p>
 
           <motion.div
             variants={fadeUp}
