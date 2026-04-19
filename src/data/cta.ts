@@ -1,6 +1,6 @@
 export const ctaData = {
-  heading: "Need it done right? Let’s get you taken care of.",
-  text: "Call or message today to get started.",
+  heading: "Free estimate — no pressure",
+  text: "Call or send a request. We’ll take a look and give you a straight answer.",
   primary: "Call Now",
-  secondary: "Request a Quote",
+  secondary: "Request Estimate",
 };
